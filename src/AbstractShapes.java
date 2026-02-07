@@ -1,20 +1,39 @@
 abstract class Shape {
-    // TODO: Abstract method numberOfSides()
+    void numberOfSide(){}
    
 }
 
-// TODO: Create class Rectangle extends Shape
-// Implement numberOfSides() to print "Rectangle has 4 sides"
+class Rectangle extends Shape
+{
+    void numberOfSide()
+    {
+        System.out.println("Rectangle has 4 sides");
+    }
+}
 
-// TODO: Create class Triangle extends Shape
-// Implement numberOfSides() to print "Triangle has 3 sides"
+class Triangle extends Shape
+{
+    void numberOfSide()
+    {
+        System.out.println("Triangle has 3 sides");
+    }
+}
 
-// TODO: Create class Hexagon extends Shape
-// Implement numberOfSides() to print "Hexagon has 6 sides"
+class Hexagon extends Shape
+{
+    void numberOfSide()
+    {
+        System.out.println("Hexagon has 6 sides");
+    }
+}
 
 public class AbstractShapes {
+    public static void main(String args[]){
+        Shape obj1 = new Rectangle();
+        Shape obj2= new Triangle();
+        Shape obj3 = new Hexagon();
+        obj1.numberOfSide();
+        obj2.numberOfSide();
+        obj3.numberOfSide();
     
-        // TODO: Create objects for Rectangle, Triangle, and Hexagon
-        // TODO: Call numberOfSides() for each object in the order: Rectangle, Triangle, Hexagon
-    
-}
+}}
